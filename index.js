@@ -3,7 +3,7 @@ const app = express()
 
 app.use(express.json())
 
-app.get('/mahasiswa', (req,res)=>{
+app.get('/kkg', (req,res)=>{
     res.status(200).send({
         "KKG-MemberTeam" : [
             "Muhammad Wahyu Ramadhan",
