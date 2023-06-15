@@ -11,7 +11,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "build": "prisma generate && <actual-build-command>",
+    "build": "prisma generate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

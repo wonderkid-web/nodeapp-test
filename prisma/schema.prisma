@@ -4,7 +4,8 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = env("DATABASE_URL")
+  url = env("DATABASE_URL")
+  relationMode = "prisma"
 }
 
 model Buku {
@@ -12,3 +13,8 @@ model Buku {
   judul_buku String
   createdAt  DateTime @default(now())
 }
+
+generator client {
+  provider = "prisma-client-js"
+}
+
