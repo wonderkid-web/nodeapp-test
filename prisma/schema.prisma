@@ -1,0 +1,14 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Buku {
+  id         Int      @unique @default(autoincrement())
+  judul_buku String
+  createdAt  DateTime @default(now())
+}
