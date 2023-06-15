@@ -5,7 +5,11 @@ app.use(express.json())
 
 app.get('/mahasiswa', (req,res)=>{
     res.status(200).send({
-        "nama": "Muhammad Wahyu Ramadhan"
+        "KKG-MemberTeam" : [
+            "Muhammad Wahyu Ramadhan",
+            "Afif Najib",
+            "Rifki Nurikhwan"
+        ]
     })
 })
 
